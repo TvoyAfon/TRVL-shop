@@ -1,0 +1,37 @@
+.modal_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    font-size: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    input{
+        font-size: 30px;
+        border: none;
+        border-radius: 10px;
+        
+    }
+    .input_msg{
+        width: auto;
+        height: 200px;
+    }
+    button{
+        font-size: 32px;
+        margin-top: 15px;
+        padding: 6px;
+        border: 2px solid rgb(4, 184, 4);
+        border-radius: 8px;
+        color:rgb(3, 185, 3);
+        background:transparent;
+        cursor: pointer;
+        transition: 0.25s ease-in-out;
+       
+        &:hover{
+            color:white;
+            border:2px solid white;
+        }
+    }
+}

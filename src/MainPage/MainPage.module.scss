@@ -1,0 +1,118 @@
+.mainPage_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-image: url('https://sun6-21.userapi.com/k7wxPbjFsPduiuz1ggOXEGZreEBdOmY-EpRKOQ/DIZB5ivs4Gk.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &_label{
+        display: flex;
+        flex-direction: column;
+        padding: 6px;
+        align-items: center;
+      animation: opacityText 2s ease-in-out;
+        span{
+             font-size: 30px;
+        }
+      h1{
+        margin-bottom: 0px;
+        font-size: 80px;
+        animation: appearText 5s ease-in-out infinite;
+      }
+    .image_container{
+       img{ width: auto;
+        height: 650px;
+        border-radius: 18px;
+        padding-bottom: 30px;
+        }
+    }
+    }
+    &_contacts{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap:30px;
+        margin-bottom: 12px;
+        font-size: 40px;
+        span{
+            cursor: pointer;
+        }
+       
+    }
+    a:hover{
+        animation: rotateIcons 3s linear infinite;
+    }
+   .mainPage_container_about{
+    padding: 12px;
+    border-radius: 10px;
+         h1{
+            color:red;
+            opacity: 0.75 ;
+         }
+
+        &_text{
+            display: flex;
+            flex-direction: column;
+        }
+        &_button{
+            font-size: 30px;
+            margin-top: 35px;
+            padding: 10px;
+            border: 2px solid rgb(4, 184, 4);
+            border-radius: 8px;
+            color:rgb(3, 185, 3);
+            background:transparent;
+            cursor: pointer;
+            transition: 0.25s ease-in-out;
+           
+            &:hover{
+                color:white;
+                border:2px solid white;
+            }
+        }
+    }
+}
+
+@keyframes rotateIcons{
+    from{
+       transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes opacityText {
+    from{
+        opacity: 0;
+        filter: blur(2px);
+    }
+    to{
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
+@keyframes appearText {
+    from {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    }
+    to {
+        text-shadow: 0 0 10px rgb(167, 60, 60), 0 0 20px rgb(189, 7, 7), 0 0 20px rgba(255, 255, 255, 1);
+    }
+}
+@media  screen and (max-width:1020px) {
+    .mainPage_container{
+       display: flex !important;
+       padding: 20px !important;
+       flex-direction: column !important;
+       font-size: 24px !important;
+        
+       img{
+         width: auto;
+         height: 470px !important;
+       }
+    }
+}
