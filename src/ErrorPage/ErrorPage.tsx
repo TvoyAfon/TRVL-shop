@@ -4,8 +4,8 @@ import ROUTES from '../routes/routes'
 
 const ErrorPage:React.FC = () => {
   return (
-    <div>
-      No such page exists.
+    <div style={{color:'black'}}>
+      No such page exists...
       <Link to={ROUTES.mainPage}> Back to main page</Link>
     </div>
   )

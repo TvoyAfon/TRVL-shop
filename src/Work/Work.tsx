@@ -5,6 +5,7 @@ import pizzaSite1 from '../assets/pizzaSite1.png'
 import donateTask from '../assets/donateTask.jpg'
 import trvl2 from '../assets/TRVL2.png'
 import trvl from '../assets/TRVL.png'
+import htmlImg from '../assets/siteOnlyHTML.png'
 
 const Work:React.FC= () => {
   const [index,setIndex] = useState<number>(0)
@@ -17,7 +18,7 @@ const Work:React.FC= () => {
       setIndex((prev) => (prev + 1) % arrImg.length)
   }, intervalTime);
       return () => clearInterval(interval);
-  },[])
+  },[arrImg.length])
  
 
   return (
@@ -42,6 +43,11 @@ const Work:React.FC= () => {
                 <span>Travel Site</span>
                 <a href="https://github.com/TvoyAfon/myFirstDemoShop"><img  src={arrImg2[index]} alt="Shop" /></a>
                 <div>Beautiful interface. Animations.Added item logic to cart and more...</div>
+            </div>
+            <div className={styles.work_project}>
+                <span>Average commissioner</span>
+                <a href="https://github.com/TvoyAfon/onlyHTML"><img  src={htmlImg} alt="site_jpg" /></a>
+                <div>The site was written in vanilla HTML. The site is a business card</div>
             </div>
       </div>
     </div>

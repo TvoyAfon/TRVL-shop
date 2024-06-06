@@ -1,5 +1,5 @@
 .modal_container{
-    display: flex;
+   form{ display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -33,5 +33,12 @@
             color:white;
             border:2px solid white;
         }
+    }
+}
+}
+
+@media screen and (max-width:1020px) {
+    input{
+        font-size: 22px !important;
     }
 }

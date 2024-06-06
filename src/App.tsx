@@ -3,7 +3,6 @@ import Navbar from './Navbar/Navbar'
 import ErrorPage from './ErrorPage/ErrorPage'
 import Work from '../src/Work/Work'
 import Footer from './Footer/Footer'
-import './App.css'
 import {Route,Routes} from 'react-router-dom'
 
 function App() {

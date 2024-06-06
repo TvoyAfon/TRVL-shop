@@ -5,7 +5,7 @@ import ROUTES from '../routes/routes'
 
 const Navbar:React.FC = () => {
 
-  const handleScroll = () =>{
+   const handleScroll = () =>{
     window.scrollBy({
       top:2200,
       behavior:'smooth'
