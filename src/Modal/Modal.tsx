@@ -46,6 +46,7 @@ const Modal:React.FC = () => {
         <input type="text" name='message'  onChange={onChange} value={fillForm.message}  required className={styles.input_msg} placeholder='Your message' />
         <button  type='submit'>Send</button>
       </form>
+      <a style={{textDecoration:'none'}} href='https://www.instagram.com/tvoy.afon'><span style={{fontSize:'18px',color:'white'}}>developed by <span style={{textDecoration:'underline'}}>TvoyAfon</span></span></a>
     </div>
   )
 }
